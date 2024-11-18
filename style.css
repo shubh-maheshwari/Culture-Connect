@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #FFFDD0; /* Cream color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    background: #FFFDD0; /* Match the background */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.translator_property {
+    border: 2px solid #000; /* Black border for separation */
+}
+
+.translator_property .nuv_item {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border-bottom: 2px solid #000; /* Black border */
+    padding: 0 20px;
+}
+
+.translator_property .nuv_item li select {
+    outline: none;
+    border-style: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000; /* Highlighted by black */
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.translator_property .nuv_item li select:hover {
+    color: #111;
+}
+
+.bx-transfer {
+    font-size: 22px;
+    color: #000; /* Highlighted by black */
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.bx-transfer:hover {
+    color: #0000FF; /* Blue color for icons */
+}
+
+.write_box {
+    display: flex;
+}
+
+.property_from, .property_trans {
+    width: 100%;
+    position: relative;
+}
+
+.write_box textarea {
+    width: 100%;
+    height: 300px;
+    border-style: none;
+    outline: none;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #000; /* Text highlighted by black */
+    background: #FFFDD0; /* Background matching page */
+    position: relative;
+    border-top: 2px solid #000; /* Black border between text areas */
+}
+
+.write_box .icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.icons .bx {
+    width: 35px;
+    height: 35px;
+    background: #0000FF; /* Blue for icons */
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #FFF; /* White text on icons */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.icons .bx:hover {
+    background: #000; /* Highlighted by black when hovered */
+    color: #FFFDD0; /* Cream text when hovered */
+}
+
+.code_length {
+    font-size: 18px;
+    color: #000; /* Black text */
+}
